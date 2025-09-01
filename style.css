@@ -1,0 +1,34 @@
+:root {
+  --max: 960px; --pad: 16px;
+  --bg: #0b0c10; --fg: #e8eef2;
+  --muted: #97a2b0; --accent: #6bd4ff;
+}
+
+html, body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.55 system-ui, sans-serif;
+}
+
+header { position: sticky; top: 0;
+  background: rgba(11,12,16,0.8); border-bottom: 1px solid #1f2833; }
+nav { max-width: var(--max); margin: 0 auto; padding: 8px var(--pad);
+  display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+nav a { color: var(--muted); text-decoration: none; padding: 6px 10px; }
+nav a:hover { color: var(--fg); background: #16212b; border-radius: 8px; }
+
+main { max-width: var(--max); margin: 0 auto; padding: 32px var(--pad); }
+h1, h2 { line-height: 1.2; margin: 24px 0 12px; }
+h1 { font-size: 2.2rem; }
+h2 { font-size: 1.5rem; border-bottom: 1px solid #1f2833; }
+
+.grid { display: grid; gap: 16px; }
+.speakers { grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); }
+
+.card { background: #0f141a; border: 1px solid #1f2833; border-radius: 12px; padding: 16px; }
+.card img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; }
+
+.schedule { width: 100%; border-collapse: collapse; }
+.schedule td { border-bottom: 1px solid #1f2833; padding: 8px; }
+.time { color: var(--muted); white-space: nowrap; }
+
+footer { max-width: var(--max); margin: 32px auto; padding: 0 var(--pad); color: var(--muted); text-align: center; }
