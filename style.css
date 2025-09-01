@@ -32,3 +32,12 @@ h2 { font-size: 1.5rem; border-bottom: 1px solid #1f2833; }
 .time { color: var(--muted); white-space: nowrap; }
 
 footer { max-width: var(--max); margin: 32px auto; padding: 0 var(--pad); color: var(--muted); text-align: center; }
+
+
+.header-banner img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 8px;
+}
