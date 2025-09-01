@@ -9,6 +9,11 @@ html, body {
   font: 16px/1.55 system-ui, sans-serif;
 }
 
+/* Offset sections so anchors appear below the sticky header */
+section {
+  scroll-margin-top: 120px; /* adjust to your header height */
+}
+
 header { position: sticky; top: 0;
   background: rgba(11,12,16,0.8); border-bottom: 1px solid #1f2833; }
 nav { max-width: var(--max); margin: 0 auto; padding: 8px var(--pad);
@@ -46,4 +51,8 @@ footer { max-width: var(--max); margin: 32px auto; padding: 0 var(--pad); color:
   display: block;
   max-height: 250px; /* optional: limit how tall it gets */
   object-fit: contain; /* ensures full image fits inside */
+}
+
+html {
+  scroll-behavior: smooth;
 }
